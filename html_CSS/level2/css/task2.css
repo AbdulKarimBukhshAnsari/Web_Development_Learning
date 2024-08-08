@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#header #head{
+    color:#004d00;
+    background-color: #f5f5dc;  
+}
+main{
+    height:1000px;
+    width:1000px;
+    background-color: aliceblue;
+
+}
+
+#product1 {
+    /* margin-top: 20px; */
+    width:200px;
+    height: 200px;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9lYB3hEdWYJtR7AgpPsyFgRigPGjILZsMCg&s");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:antiquewhite;
+
+}
