@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0;
+            margin:0;
+            padding: 0;
+        }
+    /* To check the property of padding */
+        #button1{
+            height: 50px;
+            width: 50px;
+            padding:5px 5px 5px 5px;
+        /* This line will indicate that the box size will increase when ever we apply padding or we try to attain the border */
+            box-sizing: content-box;
+            background-color: brown;
+            font-size: large;
+            color:azure;
+
+        }
+        #button2{
+            height:50px ;
+            width:50px;
+            box-sizing: content-box;
+            background-color: blue;
+            color:red;
+            font-size: large;
+            padding: 5px 5px 5px 5px;
+            /* If we have two boxes and we have defined the margin of both boxes then the box which has large nargin will be considered */
+            margin : 5px 5px 5px 5px;
+            
+        }
+        #button3{
+            height:50px;
+            width:50px;
+            box-sizing:content-box;
+            box-shadow:12px;
+            box-shadow: 1px 1px 2cap 5px red;
+            border:3px solid black;
+            border-radius:10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <!--Padding Property -->
+    <button id = "button1">Button 1</button>
+    <!--Margin Property-->  
+    <button id = "button2">Button 2</button>
+    <!--Border-->
+    <br>
+    <button id = "button3">Button3></button>
+</body>
+</html>
