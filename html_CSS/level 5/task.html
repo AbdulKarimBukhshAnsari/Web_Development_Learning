@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            border:0;
+        }
+        header nav a{
+            display:inline-block;
+            text-decoration: none;
+            margin:10px 170px 0px 80px;
+            font-size:18px;
+            color:#000080;
+            font-weight: 900;
+            
+        }
+        header{
+            background-color: aqua;
+            height: 50px;
+        
+        }
+
+        #circle{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin:20px;
+        }
+
+        main #container .box{
+            height:100px;
+            width:100px;
+            background-color:palevioletred;
+            margin:5px;
+            border:3px solid red;
+            display: inline-block;
+        }
+        
+        main #container{
+            border:5px solid black;
+            width:50vw;
+
+        }
+        main #fixed{
+            height:100px;
+            width:100px;
+            background-color:palevioletred;
+            margin:5px;
+            border:3px solid red;
+
+           right:20px;
+           position: fixed;
+        }
+        footer {
+            position:absolute;
+            bottom:0px;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div id="circle"></div>
+        <div id="container">
+            <div id="box1" class="box">Box1</div>
+            <div id="box2" class="box">Box2</div>
+            <div id="box3" class="box">Box3</div>
+        </div>
+        <div id = "fixed" class="box">
+            Fixed Box
+        </div>
+    </main>
+    <footer>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error cum voluptates fuga, dolores, quia enim architecto rem molestiae, nobis incidunt vel? Deserunt itaque vero deleniti facilis at hic ut?
+    </footer>
+</body>
+</html>
