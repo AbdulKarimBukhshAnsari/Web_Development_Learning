@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridlines</title>
+    <style>
+        #container{
+            display:grid;
+            grid-template-columns:250px 250px;
+            grid-template-rows:250px 250px;
+        }
+        /* Default size of all Boxes */
+        .box{
+            height:200px;
+            width:200px;
+            border:5px solid black;
+        
+        }
+        /* Individual Styling */
+        #box1{
+            background-color: aqua;
+            grid-column:1/2;
+            grid-row:1/2;
+        }
+        #box2{
+            background-color:antiquewhite;
+            grid-column:2/2;
+            grid-row:1/2;
+        }
+        #box3{
+            background-color:cadetblue;
+            grid-column:1/2;
+            grid-row:2/2;
+        }
+        #box4{
+            background-color:chartreuse;
+            grid-column:2/2;
+            grid-row:2/2;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div class="box" id = "box1">Grid 1</div>   
+        <div class="box" id = "box2">Grid 1</div>  
+        <div class="box" id = "box3">Grid 1</div>  
+        <div class="box" id = "box4">Grid 1</div>     
+    </div>
+   
+</body>
+</html>

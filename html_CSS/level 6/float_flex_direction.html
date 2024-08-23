@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Flex Direction</title>
+    <style>
+
+        /* Display always defined in parent  */
+        #box{
+            background-color: aliceblue;
+            height: 2000px;
+            width:2000px;
+            border:10px solid black;
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: start;
+            
+        }
+        .box1{
+            height:200px;
+            width:200px;
+            background-color:blanchedalmond;
+            color:black;
+            font-size:25px;
+            text-align:center;
+            border:10px solid black;
+            margin:10px;
+
+        }
+        .box2{
+            align-self: end;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- To check the behaviour of flex box -->
+     <div id="box">
+    <div class="box1">Box1</div>
+     <div class="box1 box2">Box2</div>
+     <div class="box1">Box3</div>
+     <div class="box1">Box4</div>
+     <div class="box1">Box5</div>
+     <div class="box1">Box1</div>
+     <div class="box1">Box2</div>
+     <div class="box1">Box3</div>
+     <div class="box1">Box4</div>
+     <div class="box1">Box5</div>
+     <div class="box1">Box1</div>
+     <div class="box1">Box2</div>
+     <div class="box1">Box3</div>
+     <div class="box1">Box4</div>
+     <div class="box1">Box5</div>
+     <div class="box1">Box1</div>
+     <div class="box1">Box2</div>
+     <div class="box1">Box3</div>
+     <div class="box1">Box4</div>
+     <div class="box1">Box5</div>
+    </div>
+
+
+
+</body>
+</html>
