@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            border:0;
+        }
+        
+        #pseudo{
+            height:40px;
+            width:100px;
+            font-size:20px;
+            font-style:normal;
+            font-weight: 700;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: antiquewhite;
+            border:2px solid black;
+            border-radius: 10px;
+        }
+        /* Define the condition of the hover */
+        #pseudo:hover {
+        height: 50px;
+        width: 120px;
+        border-color: red;
+         transition: all 0.3s ease-out;
+} 
+        #pseudo:active{
+            height:40px;
+            width:100px;
+            transition: all 1s ease-out;
+            transform: scale(100px);
+        }
+
+    </style>
+</head>
+<body>
+    <button id = "pseudo">Click Me</button>
+
+</body> 
+</html> 
