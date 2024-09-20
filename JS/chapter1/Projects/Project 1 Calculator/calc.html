@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calc.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="calc">
+        <!-- To give the text  -->
+        <input type="text" readonly id="text" />
+        <!-- Making the container for div -->
+        <div class="button-container">
+          <button
+            onclick='calculation = "";
+          document.querySelector("#text").value=calculation;'
+          >
+            C
+          </button>
+          <button
+            onclick='calculation += "1";
+          document.querySelector("#text").value=calculation;'
+          >
+            1
+          </button>
+          <button
+            onclick='calculation += "2";
+          document.querySelector("#text").value=calculation;'
+          >
+            2
+          </button>
+          <button
+            onclick='calculation += "3";
+          document.querySelector("#text").value=calculation;'
+          >
+            3
+          </button>
+          <button
+            onclick='calculation += "4";
+          document.querySelector("#text").value=calculation;'
+          >
+            4
+          </button>
+          <button
+            onclick='calculation += "5";
+          document.querySelector("#text").value=calculation;'
+          >
+            5
+          </button>
+          <button
+            onclick='calculation += "6";
+          document.querySelector("#text").value=calculation;'
+          >
+            6
+          </button>
+          <button
+            onclick='calculation += "7";
+          document.querySelector("#text").value=calculation;'
+          >
+            7
+          </button>
+          <button
+            onclick='calculation += "8";
+          document.querySelector("#text").value=calculation;'
+          >
+            8
+          </button>
+          <button
+            onclick='calculation += "9";
+          document.querySelector("#text").value=calculation;'
+          >
+            9
+          </button>
+          <button
+            onclick='calculation += "+";
+          document.querySelector("#text").value=calculation;'
+          >
+            +
+          </button>
+          <button
+            onclick='calculation += "-";
+          document.querySelector("#text").value=calculation;'
+          >
+            --
+          </button>
+          <button
+            onclick='calculation += "*";
+          document.querySelector("#text").value=calculation;'
+          >
+            X
+          </button>
+          <button
+            onclick='calculation += "/";
+          document.querySelector("#text").value=calculation;'
+          >
+            /
+          </button>
+          <button
+            onclick='calculation = eval(calculation);
+          document.querySelector("#text").value=calculation;'
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let calculation = "0";
+      document.querySelector("#text").value = calculation;
+    </script>
+  </body>
+</html>

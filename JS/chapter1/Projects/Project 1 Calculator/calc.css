@@ -1,0 +1,59 @@
+/* Dealing with The deafault margin */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* Dealng with main  */
+.main {
+  background-image: url("bg.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+/* Dealing with the div of calculator*/
+.main .calc {
+  height: 80%;
+  width: 25%;
+  background-color: #a0522d;
+  position: absolute;
+  right: 1%;
+  top: 10%;
+  border: 5px solid black;
+  border-radius: 30px;
+}
+
+.main .calc input {
+  width: 80%;
+  height: 15%;
+  margin: 10% 10%;
+  background-color: #d9b38c;
+  border-radius: 10px;
+  color: #4f2f1b;
+  font-size: 50px;
+  text-align: right;
+}
+.main .calc .button-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -23px 0px 50px 35px;
+    gap:10px;
+    width: 80%;
+}
+
+/* Making desing for button */
+.main .calc .button-container button{
+ font-size: large;
+ width:70px;
+ height: 57px;
+ border-radius: 50%;
+ margin-left: 3px;
+ font-weight: bolder;
+ background-color:  #DEB887;
+ color: black;
+ cursor: pointer;
+}
+
+.main .calc .button-container button:hover{
+    background-color: #f4d7b1;
+}
