@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        background-image: url("Bat\ Ball\ Stump\ Game.webp");
+        background-size: contain;
+      }
+      .main-heading {
+        text-align: center;
+        font-size: 4rem;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font: optional;
+        background-color: rgb(123, 11, 11);
+        width: 55%;
+        margin: auto;
+        border-radius: 10px;
+        color: white;
+      }
+      .buttons {
+        display: flex;
+        width: 50vw;
+        margin: auto;
+        margin-top: 60px;
+        justify-content: space-around;
+      }
+      .buttons button {
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+        border: none;
+        background-color: bisque;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 25px;
+        font-weight: 550;
+        color: black;
+      }
+      button:hover {
+        background-color: rgb(255, 145, 0);
+      }
+      button:active {
+        background-color: white;
+      }
+      .result {
+        width: 600px;
+        height: 200px;
+        background-color: white;
+        margin: auto;
+        margin-top: 50px;
+        border: 3px solid black;
+        border-radius: 10px;
+      }
+      .result h3 {
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="main-heading">Bat Ball Stump Game</h1>
+    <div class="buttons">
+      <button
+        onclick='
+        my_choice = "Bat";
+         let random_number = Math.random()*3;
+         if(random_number<=1){
+            computer_choice = "Bat";
+         }
+         else if(1<random_number && random_number<=2){
+            computer_choice = "Ball";
+         }
+         else{
+            computer_choice = "Stump"
+         }
+         if(computer_choice===my_choice) document.querySelector("#result-line").innerText = `Computer Chose ${computer_choice} ,Game has tied`;
+         else if(computer_choice==="Ball") document.querySelector("#result-line").innerText = `Computer Chose ${computer_choice} ,You have won`;
+         else  document.querySelector("#result-line").innerText = `Computer Chose ${computer_choice}, Computer  has won`;  '
+      >
+        Bat
+      </button>
+      <button
+        onclick='
+        my_choice = "Ball";
+         random_number = Math.random()*3;
+         if(random_number<=1){
+            computer_choice = "Bat";
+         }
+         else if(1<random_number && random_number<=2){
+            computer_choice = "Ball";
+         }
+         else{
+            computer_choice = "Stump"
+         }
+         if(computer_choice===my_choice) document.querySelector("#result-line").innerText = `Computer Chose ${computer_choice} ,Game has tied`;
+         else if(computer_choice==="Stump") document.querySelector("#result-line").innerText = `Computer Chose ${computer_choice} ,You have won`;
+         else  document.querySelector("#result-line").innerText = `Computer Chose ${computer_choice}, Computer  has won`;  '
+      >
+        Ball
+      </button>
+      <button
+        onclick='
+      my_choice = "Stump";
+       random_number = Math.random()*3;
+       if(random_number<=1){
+          computer_choice = "Bat";
+       }
+       else if(1<random_number && random_number<=2){
+          computer_choice = "Ball";
+       }
+       else{
+          computer_choice = "Stump"
+       }
+       if(computer_choice===my_choice) document.querySelector("#result-line").innerText = `Computer Chose ${computer_choice} ,Game has tied`;
+       else if(computer_choice==="Bat") document.querySelector("#result-line").innerText = `Computer Chose ${computer_choice} ,You have won`;
+       else  document.querySelector("#result-line").innerText = `Computer Chose ${computer_choice}, Computer  has won`;  '
+      >
+        Stump
+      </button>
+    </div>
+    <div class="result">
+      <h3 id="result-line">Choose Any Above option to Play!!!</h3>
+    </div>
+    <script>
+      let computer_choice;
+      let my_choice;
+    </script>
+  </body>
+</html>
