@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button { 
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button></button>
+    <script>
+        let my_date = new Date();
+        let current_hour =  my_date.getHours();
+        if(current_hour<12) alert('Good Morning Karim!');
+        else if(current_hour>=12 && current_hour<18) alert('Good Afternoon Karim!');
+        else alert('Good Night Karim!!');
+    </script>
+</body>
+</html>

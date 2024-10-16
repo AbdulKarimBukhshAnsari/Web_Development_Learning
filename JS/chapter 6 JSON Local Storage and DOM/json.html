@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <script>
+        // Json is a type of data arranging which is quite similar to the JS object the only difference lies in the condition of the key value data 
+        // Which is strictly should be the string in double quotes ' "" '  it is used for local storage
+        // Creating a JS object
+        let product = {Company : 'Apple' , price : 23000 , model : 'iphone 16'};
+        // Checking the type of product which will be the object 
+        console.log(product);
+        console.log(typeof product);
+        // Converting into String which is JSON we used JSON method which is JSON.stringfy();
+        let str = JSON.stringify(product);
+        // Again checking the data type which will be the string in the case
+        console.log(typeof str);
+        console.log(str);
+        // We convert the JSON file into JS object by usin simple JSON.parse();
+        let obj = JSON.parse(str);
+        // Checking the types of obj which would be the object for sure
+        console.log(typeof obj);
+        console.log(obj);
+    </script>
+</body>
+</html>

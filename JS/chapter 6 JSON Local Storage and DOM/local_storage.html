@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <script>
+        // Persisitent storage for storing the value it will help to retirve the valur even you close your browser 
+        // the items will be saved in the form of key value pairs , we use the set item of local store the value
+        localStorage.setItem("Name","Karim");
+        // This will give the result as Name : Karim 
+        // The value has been stored and we can access these values after that 
+        console.log(localStorage.getItem("Name")) ; // by using the key 
+        // To remove any key value pairs we use the method remove 
+        localStorage.removeItem("Name");//remove the item which has the key NAme
+        // To clear all the storage we use the method clear
+        localStorage.setItem("Model","Iphone");
+        localStorage.clear();
+        // It will just store the string so before storing anything we have to convert all the values in the string format lets consider If you want to store JSON object you must have to
+        // into string by using JSON.stringfy();
+        let product = {Company : "Apple" , Model : "Iphone 16"};
+        localStorage.setItem("Product" , JSON.stringify(product));
+        // To get the item we can use the JSON.parse()
+        let product1 = JSON.parse(localStorage.getItem("Product"));
+        console.log(product1);
+    </script>
+</body>
+</html>

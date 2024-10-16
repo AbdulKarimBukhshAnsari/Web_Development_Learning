@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button</title>
+    <style>
+      button {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: red 3px solid;
+        color:white;
+      }
+      button:hover {
+        background-color: aliceblue;
+      }
+      button:active {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+        class = 'button'
+      onclick='number++
+        localStorage.setItem("count",number);
+        number  = localStorage.getItem("count");
+        print_the_number(number);'
+    >
+      <h3 class="number"></h3>
+    </button>
+    <script>
+      // To print the count
+      function print_the_number(num) {
+        document.querySelector(".number").innerText = `Click ${num} times`;
+        choosing_color(num);
+        return;
+      }
+
+    // Choosing color
+    function choosing_color(num){
+        let element = document.querySelector('.button');
+        if(num%2==0){
+            element.style.backgroundColor = 'red';
+        }
+        else {
+            element.style.backgroundColor = 'blue';
+        }
+        return ;
+    }
+      let number = localStorage.getItem("count") || 0;
+      print_the_number(number);
+      localStorage.clear();
+      
+    </script>
+  </body>
+</html>

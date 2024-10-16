@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        border: 0;
+      }
+      body {
+        height: 100vh;
+        background-image: url("Bat\ Ball\ Stump\ Game.webp");
+        background-size: contain;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main-heading {
+        text-align: center;
+        font-size: 4rem;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font: optional;
+        background-color: rgb(123, 11, 11);
+        width: 55%;
+        margin: auto;
+        border-radius: 10px;
+        color: white;
+      }
+      .buttons {
+        display: flex;
+        width: 50vw;
+        margin: auto;
+        margin-top: 60px;
+        justify-content: space-around;
+      }
+      .buttons button {
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+        border: none;
+        background-color: bisque;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 25px;
+        font-weight: 550;
+        color: black;
+      }
+      button:hover {
+        background-color: rgb(255, 145, 0);
+      }
+      button:active {
+        background-color: white;
+      }
+      .result {
+        width: 600px;
+        height: 220px;
+        background-color: white;
+        margin: auto;
+        margin-top: 20px;
+        border: 3px solid black;
+        border-radius: 10px;
+      }
+      .result h3 {
+        text-align: center;
+        font-size: 30px;
+      }
+      .result h2{
+        margin-left: 10px;
+      }
+      /* Setting the reset div button */
+      .reset-div {
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      /* Fomatting the button  */
+      .reset-div button{
+        width : 200px;
+        height:50px;
+        border-radius: 10px;
+        background-color: bisque;
+        font-family: "Arial", Times, serif;
+        font-size: 20px;
+        font-weight: 550;
+        text-align: center;
+      }
+
+      .reset-div button:hover {
+        background-color: orange;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 class="main-heading">Bat Ball Stump Game</h1>
+    <div class="buttons">
+      <button
+        onclick='
+        my_choice = "Bat";
+         computer_choice = find_computer_choice();
+         win_value = "Ball";
+         final_result(computer_choice,my_choice,win_value,score);
+         '
+      >
+        Bat
+      </button>
+      <button
+        onclick='
+        my_choice = "Ball";
+        win_value = "Stump";
+        computer_choice = find_computer_choice();
+        final_result(computer_choice,my_choice,win_value,score);
+          '
+      >
+        Ball
+      </button>
+      <button
+        onclick='
+      my_choice = "Stump";
+      win_value = "Bat";
+      computer_choice = find_computer_choice();
+      final_result(computer_choice,my_choice,win_value,score);
+     '
+      >
+        Stump
+      </button>
+    </div>
+    <div class="result">
+      <h3 id="result-line">Choose Any Above option to Play!!!</h3>
+      <h2 id = "score"></h2>
+    </div>
+    <div class = "reset-div">
+    <button class = 'reset' onclick="localStorage.clear();
+    document.querySelector('#score').innerText = display();
+    ">
+      Reset
+    </button>
+    </div>
+    <!-- Starting of JS -->
+    <script>
+      //   Making function to find the computer Choice
+      function find_computer_choice() {
+        let random_number = Math.random() * 3;
+        if (random_number <= 1) {
+          return "Bat";
+        } else if (1 < random_number && random_number <= 2) {
+          return "Ball";
+        } else {
+          return "Stump";
+        }
+      }
+      // Making function to dsiplay the result 
+        function display(){
+        score = JSON.parse(localStorage.getItem("result")) ;
+        score = JSON.parse(localStorage.getItem("result")) || {user:0,computer: 0 ,tied :0};
+        return `Computer won : ${score.computer}\n User Won : ${score.user}\n Tied Game : ${score.tied} `;
+      }
+      // Making function to print the final result
+      function final_result(comp_choice, user_choice, win_value, score) {
+        if (comp_choice === user_choice) {
+          document.querySelector(
+            "#result-line"
+          ).innerText = `Computer Chose ${comp_choice} ,Game has tied`;
+          score.tied += 1;
+        } else if (comp_choice === win_value) {
+          document.querySelector(
+            "#result-line"
+          ).innerText = `Computer Chose ${comp_choice} ,You have won`;
+          score.user += 1;
+        } else {
+          document.querySelector(
+            "#result-line"
+          ).innerText = `Computer Chose ${computer_choice}, Computer  has won`;
+          score.computer += 1;
+        }
+        // To store in the local storage
+        localStorage.setItem("result",JSON.stringify(score));
+        // To get the result 
+        
+        document.querySelector("#score").innerText = display();
+      }
+      let computer_choice;
+      let my_choice;
+      let win_value;
+      // Creating an objects to store the result
+      let score = JSON.parse(localStorage.getItem("result")) || {user: 0 , computer : 0 , tied : 0,};    
+    </script>
+  </body>
+</html>

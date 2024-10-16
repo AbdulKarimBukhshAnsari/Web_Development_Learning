@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Objects is a data type which is used to store the related objects in same variable , in objects we can define another object and fuction as well If we define another object in one object then this is called as nested objetcs
+        // Creating object 
+        let product = {company : 'Apple' , model : 'Iphone 16' , price : '100000' , display_price :function(){console.log(this.price); return 0 ;} };
+        // To access the element of the objects we use dot
+        console.log(product.company);
+        // To acccess the conent of the function which is defined in the object 
+        product.display_price();
+        // WE can also access the properties of the object by putting the keys in the square brackets
+        // But we must have to put in the single quoma or double quoma key it also gives benefit when if the key is string data type  
+        console.log(product['model']);
+        // to delete the property of the objects
+        delete product.company;  //now we can't access it 
+        // to add another property which is not alreay present in the objects
+        product['name'] = 'anda';
+        console.log(product.name);
+    </script>
+</body>
+</html>

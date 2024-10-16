@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+</head>
+<body>
+    <script>
+        let age = prompt("Enter your age: ");
+        let gender = prompt("Enter your gender");
+        let gender_female = gender=="female" ? true : false;
+        let discount;
+        if(age<=5){
+            discount = 100;
+        }
+        else if(age<8){
+            discount = 50;
+        }
+        else if(age>65){
+            discount = 30;
+        }
+        else discount = 0;
+        if(gender_female){
+            discount = Math.max(50,discount);
+        }
+        console.log(`You got ${discount}% discount.`)   
+    </script>
+</body>
+</html>

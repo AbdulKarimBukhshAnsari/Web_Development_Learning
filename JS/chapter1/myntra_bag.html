@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Bag</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .button{
+            border:none;
+        }
+        .add-item{
+            background-color: #9ef19e;
+            padding:5px 17px;
+            margin: 7px;
+            margin: 7px;
+            border-radius: 13px;
+            font-weight: 550;
+        }
+
+        .add-item:active{
+            background-color: #c2e9c2;
+        }
+        #wishlist{
+            padding: 5px 45px ;
+            border: 1px solid rgb(22, 20, 20);
+            font-weight: 550;
+            border-radius: 10px;
+        }
+        #card-quantity{
+            margin: 10px;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <button class = "button add-item"  onclick='quantity_items+=1; document.querySelector("#card-quantity").innerText = `Your bag has ${quantity_items} items`'>Add to Bag</button>
+    <button class = "button" id = "wishlist" onclick='quantity_items-=1; document.querySelector("#card-quantity").innerText = `Your bag has ${quantity_items} items`' >Wishlist</button>
+    <button class = "button add-item" onclick='quantity_items+=2; document.querySelector("#card-quantity").innerText = `Your bag has ${quantity_items} items`' >Add 1+1 items</button>
+    <h1 id = "card-quantity"></h1>
+    <script>
+        let quantity_items = 0;
+        document.querySelector("#card-quantity").innerText = `Your Bag has 0 items`
+        
+    </script>
+</body>
+</html>
