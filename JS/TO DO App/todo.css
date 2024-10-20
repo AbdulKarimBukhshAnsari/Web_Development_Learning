@@ -1,0 +1,34 @@
+body{
+    background-image: url('assets/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.boy-gif{
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+}
+
+body .todo-app{
+    height: 460px;
+    width:450px;
+    background-color:#FFFAE3;
+    position: absolute;
+    margin: 50px 70px 0px 70px;
+    border-radius: 30px;
+}
+
+.todo-app .heading{
+    display: flex;
+    justify-content: center;
+}
+
+.todo-app .heading .todo-heading{
+    font-size: 40px;
+    align-self: center;
+    margin-top: 13px;
+}
+
+
