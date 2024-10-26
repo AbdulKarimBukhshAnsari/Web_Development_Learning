@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do Application</title>
-    <link rel="stylesheet" href="todo.css">
-</head>
-<body>
-    <img src ="assets/gif.gif" height="400px" class="boy-gif">
+    <link rel="stylesheet" href="todo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <img src="assets/gif.gif" height="400px" class="boy-gif" />
     <div class="todo-app">
-        <div class="heading">
-            <img src="assets/pen_book.png" height="70px" >
-            <h1 class='todo-heading'>SwiftTask</h1>
+      <div class="heading">
+        <img src="assets/pen_book.png" height="70px" />
+        <h1 class="todo-heading">SwiftTask</h1>
+      </div>
+      <div class="input-handling">
+        <input
+          type="text"
+          placeholder="Enter the Task"
+          class="input-text input"
+        />
+        <input type="date" class="input-date input" />
+        <button class="add-button input" onclick="enter_task();">Add</button>
+      </div>
+        <div class="todo-task">
+          <div class="tasks"></div>
         </div>
     </div>
     <script src="todo.js"></script>
-</body>
+  </body>
 </html>

@@ -1,34 +1,126 @@
-body{
-    background-image: url('assets/bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+body {
+  background-image: url("assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.boy-gif{
-    position: absolute;
-    right: 0px;
-    bottom: 50px;
+
+*{
+    border: 0;
 }
 
-body .todo-app{
-    height: 460px;
-    width:450px;
-    background-color:#FFFAE3;
-    position: absolute;
-    margin: 50px 70px 0px 70px;
-    border-radius: 30px;
+/* Placing the GIf */
+.boy-gif {
+  position: absolute;
+  right: 0px;
+  bottom: 50px;
 }
 
-.todo-app .heading{
+/* Todo App body define */
+body .todo-app {
+  height: 460px;
+  width: 450px;
+  background-color: #fffae3;
+  position: absolute;
+  margin: 50px 70px 0px 70px;
+  border-radius: 30px;
+}
+
+/* Heading Css  div*/
+.todo-app .heading {
+  display: flex;
+  justify-content: center;
+}
+
+/*Proper design of Heading  */
+.todo-app .heading .todo-heading {
+  font-size: 40px;
+  align-self: center;
+  margin-top: 13px;
+}
+/* Input fields */
+.todo-app .input-handling {
+  display: flex;
+  justify-content: space-around;
+}
+/* Make the class which has been given to all the tags which are in input */
+.todo-app .input-handling .input {
+  height: 50px;
+  border-radius: 7px;
+  border: 2px solid black;
+  font-size: 15px;
+}
+
+.todo-app .input-handling .input-text {
+  width: 40%;
+  font-family:sans-serif;
+  font-size: 20px;
+}
+
+.todo-app .input-handling .input-date {
+  width: 27%;
+}
+
+.todo-app .input-handling .add-button {
+  width: 20%;
+  background-color: blueviolet;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+/* making the div to show the task dynamically  */
+.todo-app .tasks {
+  margin-top: 10px;
+  width:100%;
+}
+
+.task-show {
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 224, 224);
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+    height: 70px;
 }
 
-.todo-app .heading .todo-heading{
-    font-size: 40px;
-    align-self: center;
-    margin-top: 13px;
+.delete-button {
+    width: 20%;
+    background-color: rgb(185, 20, 20);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    height: 70%;
+    border-radius: 5px;
+
+    
 }
+
+.task{
+    width: 40%;
+    font-family:sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Playwrite GB S', cursive;
+    
+  }
+
+.todo-task{
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.todo-task::-webkit-scrollbar {
+  display: none;
+}
+  
+
 
 
