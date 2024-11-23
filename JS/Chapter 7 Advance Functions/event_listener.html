@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="clicked">
+        Click ME
+    </button>
+    <script>
+        // Till yet when we have to apply some function in button we use on click but this is only for button event listener is like that 
+        // ke jab yeh ho to yeh kardo 
+        function button_function(){
+            console.log('Hello World');
+        }
+
+        let click_button = document.querySelector('.clicked');
+        click_button.addEventListener('click',button_function); // we give two parameters one is the event and other one is the function we can also use anonymous function and arrows functions as well
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        If we want to execute some code after the fix time of interval then we use 
+        seTimeout and setTimeinterval , the primary difference between both of them is nothing is just if we want to execute any 
+        thing only once then we use first one otherwise we use 2nd one 
+        both function will take 2 arguments 
+        1) Function as an argument don't make mistake by calling in the setTimeoue 
+        2)The time which it will take only in milli seconds i.e (2000 ->2seconds)
+        */
+        function alarm(){
+            console.log("Subah hogai uth jao ");
+        }
+        let timer_id = setTimeout(alarm,10000); // I am not calling the alarm function in the setTimeout and I am giving the time which is 10 second
+
+        // Howwever if you want to clear the timeout that this thing should not be happend then you can just use clearTimeout function 
+        // You have to just provide the ID of that timer and luckily the timeout function returns its id by itself
+
+        clearTimeout(timer_id); // now the above timer wil not do its work 
+
+        let interval_id = setInterval(() => console.log('kese ho ') , 2000); // using arrows functions as an argument and after each 2 second this thing will happen
+        // you can also use the clear function to clear the interval if we want to clear the interval after 4 seconds
+        setTimeout(() => clearInterval(interval_id),4000); // this function will work after 4 seconds
+    </script>
+</body>
+</html>

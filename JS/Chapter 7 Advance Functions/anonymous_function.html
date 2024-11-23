@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Anonymous functions are those function which has no name
+        let sum = function(num1,num2){
+            return num1+num2;
+        }
+        // We can now even call that function by using your number
+        console.log(sum(7,5));
+        // we can pass this function as an argument and can use them in inside of the function 
+        function sumThreeNumbers(sum , num1 , num2,num3){
+            let time_sum = sum(num1,num2)
+            return sum(time_sum,num3);
+        }
+
+        console.log(sumThreeNumbers(sum,25,34,56));
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Creating an array
+        let my_array = [1,2,"tell"];
+        // To find the length of the array
+        console.log(my_array.length);
+        // Push and pop will add and remove the element respectively from the end of the array
+        my_array.push('hello',12,34); // can add one or more than 2 elements as well
+        console.log(my_array); 
+        my_array.pop(); // remove only last eleemnt 
+        // shift and unshift is used to add and remove the value from the start of the array respectively 
+        my_array.unshift('world',12); // unshift is ussed to add the value  we can add one or more than 1 value at the front or we can say at the start 
+        my_array.shift() // shift is used to remove the element 
+        console.log(my_array);
+        // Use of splice function
+        // It is used to add or remove from the particular index and it will also take number of elements as an argument 
+        my_array.splice(0,0,'smjhdar','jiya');  
+        console.log(my_array); 
+        console.log(Array.isArray(my_array)); //check whether the variable is array or not .
+        console.log(my_array.length);
+        let int_array = [23,45,76,90,-1,-3];
+        int_array.sort();
+        console.log(int_array);
+        // Destructuring is also allowed in arrays
+        let [a,b,c,d] = my_array;
+        // the first four elements will be assigned to above variables respectively
+        console.log(a);
+        // Convert into string
+        console.log(my_array.toString());
+    </script>
+</body>
+</html>
