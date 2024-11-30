@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web Page by using tailwind css</title>
+    <link rel="stylesheet" href="web_page.css">
+</head>
+<body class="bg-slate-950 h-screen capitalize ">
+    <!-- navigation bar portion start  -->
+    <nav class="w-full h-[8%] flex justify-between py-2 px-4 bg-indigo-200 items-center">
+        <div class="text-2xl text-indigo-700 font-bold">CW Skills</div>
+        <ul class=" hidden md:flex md:gap-20 md:font-bold ">
+            <li class="cursor-pointer ">Home</li>
+            <li class="cursor-pointer">About US</li>
+            <li class="cursor-pointer">Contact US</li>
+        </ul>
+        <div class=" hidden md:block bg-indigo-600 py-2 px-4 rounded-lg font-bold text-white cursor-pointer hover:bg-indigo-800
+        ">Login/SignUp</div>
+        <div class="md:hidden block">
+            <a href="#" class="text-5xl">&#8801;</a>
+        </div>
+    </nav>
+    <!--Navigation bar ends here-->
+    <!-- image section start here  -->
+    <header class="w-full bg-gradient-to-r from-slate-900 to-slate-700 overflow-hidden">
+        <div class="flex justify-between items-center flex-col-reverse md:flex-row md:flex-nowrap flex-wrap ">
+        <div class="capitalize self-center ml-5 xl:text-6xl lg:text-4xl text-3xl text-white font-semibold  w-[95%] leading-normal font-mono md:pb-0 pb-7 md:w-[58%] md:px-0  px-3 animate-slideInFromBottom">The Industry Requires Education along with Advance Technical Skills. <div class="mt-5  text-indigo-200 font-bold">Get It The Smart Way!</div></div>
+        <div class="py-5 xl:w-[600px] h-auto w-[400px] lg:w-[500px]  flex-shrink-0 animate-slideInFromBottom"><img src="../assets/main_boy_pic.png" ></div>
+        </div>
+    </header> 
+    <!-- image section ends here  -->
+
+    <!-- students section start here  -->
+    <main class="w-full h-auto">
+    <section class="w-full h-auto flex flex-col justify-center items-center ">
+        <!-- 1st div which is used to show the line  -->
+        <div class="flex flex-col items-center justify-center">
+            <div class="capitalize text-2xl md:text-4xl  text-indigo-200 font-bold mt-10 text-center">
+                "pure hardwork , no shortcuts"
+            </div>
+            <div class="w-36 h-4 border-b-4 border-yellow-600 mt-2 md:mt-4"></div>
+        </div>
+        <!-- 2nd div for the students acheivement -->
+        <div class="flex justify-around px-9 mt-10 w-full flex-wrap md:flex-nowrap animate-slideInFromBottom">
+            <div class=" mx-auto flex flex-col items-center gap-2 mt-10 animate-slideInFromBottom ">
+                <div class="rounded-full overflow-hidden">
+                    <img src="../assets/1st_student_acheivement.jpg" class="w-44 h-44">
+                </div>
+                <p class="text-2xl text-white font-semibold">
+                    800000+
+                </p>
+                <span class="text-gray-400 text-xl font-extrabold  font-mono flex-shrink">
+                    students enrolled
+                </span>
+            </div>
+            <div class=" mx-auto flex flex-col items-center gap-2 mt-10 animate-slideInFromBottom">
+                <div class="rounded-full overflow-hidden bg-white">
+                    <img src="../assets/2nd_student_achievement.png" class="w-44 h-44">
+                </div>
+                <p class="text-2xl text-white font-semibold">
+                    100+
+                </p>
+                <span class="text-gray-400 text-xl font-extrabold  font-mono flex-shrink">
+                    countries
+                </span>
+            </div>
+            <div class=" mx-auto flex flex-col items-center gap-2 mt-10 ">
+                <div class="rounded-full overflow-hidden">
+                    <img src="../assets/3rd_student_achievement.png" class="w-44 h-44">
+                </div>
+                <p class="text-2xl text-white font-semibold">
+                    1000+
+                </p>
+                <span class="text-gray-400 text-xl font-extrabold  font-mono flex-shrink">
+                    Successfull Transition 
+                </span>
+            </div>
+        </div>
+        <!-- 3rd div which is used to show the another line  -->
+        <div class="flex flex-col items-center justify-center mt-10">
+            <div class="capitalize text-2xl md:text-4xl  text-indigo-200 font-bold mt-10 text-center">
+                "our products"
+            </div>
+            <div class="w-36 h-4 border-b-4 border-yellow-600 mt-2 md:mt-4"></div>
+        </div>
+        <!-- 4th div for showing the product -->
+        <div class="flex justify-around px-9 mt-10 w-full flex-wrap xl:flex-nowrap font-mono text-center ">
+
+            <div class="  flex flex-col items-center gap-4 mt-10 mx-4">
+                <div class="rounded-full overflow-hidden">
+                    <img src="../assets/product-5.png" class="w-44 h-44">
+                </div>
+                <span class="text-2xl text-white font-semibold">
+                    CW Skills Hub
+                </span>
+                <p class="text-gray-400 text-xl font-extrabold  font-mono flex-shrink text-center">
+                    Boost your expertise with Skill Hub – learn, grow, and excel in your career.
+                </p>
+            </div>
+
+            <div class=" mx-4 flex flex-col items-center gap-4 mt-10">
+                <div class="rounded-full overflow-hidden">
+                    <img src="../assets/product-1.png" class="w-44 h-44">
+                </div>
+                <span class="text-2xl text-white font-semibold">
+                    Job portal
+                </span>
+                <p class="text-gray-400 text-xl font-extrabold  font-mono flex-shrink text-center">
+                    Discover opportunities that match your skills and aspirations with our dedicated job portal!
+                </p>
+            </div>
+
+            <div class=" mx-4 flex flex-col items-center gap-4 mt-10">
+                <div class="rounded-full overflow-hidden">
+                    <img src="../assets/product-2.png" class="w-44 h-44">
+                </div>
+                <span class="text-2xl text-white font-semibold">
+                    experience portal
+                </span>
+                <p class="text-gray-400 text-xl font-extrabold  font-mono flex-shrink text-center">
+                    Experience Portal: Showcase, grow, and leverage your expertise for new opportunities.
+                </p>
+            </div>
+
+            <div class=" mx-4 flex flex-col items-center gap-4 mt-10 ">
+                <div class="rounded-full overflow-hidden bg-white">
+                    <img src="../assets/product-3.png" class="w-44 h-44">
+                </div>
+                <span class="text-2xl text-white font-semibold">
+                    affiliation
+                </span>
+                <p class="text-gray-400 text-xl font-extrabold  font-mono flex-shrink text-center">
+                    Affiliate Program: Partner with us and earn while you grow your network.
+                </p>
+            </div>
+
+            <div class=" mx-4 flex flex-col items-center gap-4 mt-10">
+                <div class="rounded-full overflow-hidden bg-white">
+                    <img src="../assets/product-4.png" class="w-44 h-44">
+                </div>
+                <span class="text-2xl text-white font-semibold">
+                    hall of fame
+                </span>
+                <p class="text-gray-400 text-xl font-extrabold  font-mono flex-shrink text-center">
+                    Hall of Fame: Celebrating achievements and inspiring excellence.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full h-auto bg-gray-700 px-4 text-white pt-8 flex flex-col md:flex-row flex-wrap justify-between md:px-12" >
+        <div class="flex flex-col">
+            <img src="../assets/logo.png" class="w-20 " alt="">
+            <span class="text-xl font-bold pt-3">CW School</span>
+            <p class="cursor-pointer">Email us : <span class="lowercase pt-5 font-mono">abdulkarimbukhshansari@gmail.com</span></p>
+            <img src="../assets/gold medal.jpg" class="w-20 m-4" alt="">
+        </div>
+        <div class="flex flex-col mt-6 md:mt-0 cursor-pointer">
+            <div class="text-2xl text-gray-300 font-bold font-mono">CW Skills</div>
+            <div class="w-36 h-4 border-t-4 border-yellow-600  "></div>
+            <ul clas="mt-4">
+                <li>About</li>
+                <li>FAQs</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="flex flex-col mt-6 md:mt-0 cursor-pointer">
+            <div class="text-2xl text-gray-300 font-bold font-mono">CW Products</div>
+            <div class="w-36 h-4 border-t-4 border-yellow-600  "></div>
+            <ul clas="mt-4">
+                <li>CW Labs</li>
+                <li>Job Portal</li>
+                <li>Affiliate</li>
+                <li>Efficiency</li>
+                <li>IT Department</li>
+                <li>EMU</li>
+            </ul>
+        </div>
+        <div class="flex flex-col mt-6 md:mt-0 mb-10 md:mb-0 cursor-pointer">
+            <div class="text-2xl text-gray-300 font-bold font-mono">Links</div>
+            <div class="w-36 h-4 border-t-4 border-yellow-600  "></div>
+            <ul clas="mt-4">
+                <li>LinkedIn</li>
+                <li>Facebook</li>
+                <li>Discord Cahnnel</li>
+            </ul>
+        </div>
+    </footer>
+    </main>
+    
+</body>
+</html>
