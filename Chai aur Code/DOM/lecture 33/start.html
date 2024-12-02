@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style ="background-color: black; color:white;">
+    <!-- Today we will learn how can we select the parent and how can we play with parent child relation in JS -->
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    <script>
+        // for selecting the parent 
+        const parent_element = document.querySelector('.parent');
+        // for getting its child  , it will return the result in the form of HTML content 
+        const child_elements = parent_element.children;
+        // now we can apply all the properties of HTML content in this , hope you have understood , what ever I wanna convey
+        // we can access also the child element though 
+        console.log(parent_element.lastChildElement);
+        //  we can also access the parent by using the child element
+        console.log(child_elements[0].parentElement);
+
+        // Importance of Child Nodes 
+        // we can also see the nodes list of any html content 
+        console.log(parent_element.childNodes);
+        // It will return the line break tooo so the coutnt will be 9 for all .
+    </script>
+</body>
+</html>
