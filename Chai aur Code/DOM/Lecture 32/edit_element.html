@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // First of All we will make a div  by using the pure JS
+    const div_element = document.createElement('div');
+    div_element.setAttribute('class','div_element');
+    const text_node = document.createTextNode('I am First DIV');
+    div_element.append(text_node);  // to append the text node in the div
+    console.log(div_element);
+    document.body.append(div_element);  // to append the element in the page.
+
+    // Then I will edit them by using the inner html method
+    div_element.innerHTML = "I am edited DIV";
+
+    
+    // outerhtml ke baad change nhi karsakte app chages 
+    // To edit the element by using the replace with method 
+    const div_element1 = document.createElement('div');
+    div_element1.setAttribute('class','div_element1');
+    const text_node1 = document.createTextNode('I am The edited div by replace with method...');
+    div_element1.append(text_node1);  // to append the text node in the div
+    div_element.replaceWith(div_element1);
+    // to remove an element
+    div_element1.remove();
+    console.log(div_element1);
+</script>
+</html>

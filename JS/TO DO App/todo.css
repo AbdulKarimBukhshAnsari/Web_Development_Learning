@@ -10,6 +10,10 @@ body {
     border: 0;
 }
 
+button {
+  cursor:pointer;
+}
+
 /* Placing the GIf */
 .boy-gif {
   position: absolute;

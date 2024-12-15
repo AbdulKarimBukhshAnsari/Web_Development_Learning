@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body>    
 </body>
 <script>
     // to create a new div by using JS 
@@ -14,8 +13,10 @@
     div.setAttribute("id" , "heading");
     div.setAttribute("class" , "heading");
     div.style.backgroundColor = 'red';
+    div.style.color = 'white';
     div.style.padding = "10px";
-    div.innerText = "Hell I am the heading which is created by using JS";
+    const node = document.createTextNode("Hello");
+    div.append(node);
     document.body.append(div);
 </script>
 </html>

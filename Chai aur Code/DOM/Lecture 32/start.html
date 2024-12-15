@@ -16,14 +16,33 @@
     <h1 class="hello" id="welcome" >Hello Abdul Karim How are you ?? </h1>
     <p class="opening">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
    </div>
-   <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-    <li>6</li>
-    <li>7</li>
+   <ul id ="items">
+    <li class="item">item1</li>
+    <li class="item">item2</li>
+    <li class="item">item3</li>
+    <li class="item">item4</li>
+    <li class="item">item5</li>
+    <li class="item">item6</li>
    </ul>
+   <script>
+    const lst = document.getElementsByClassName('item');
+    console.log(lst);
+
+    //return the length of the html collection  
+    console.log(lst.length);
+    // return the item of specific index
+    console.log(lst.item(1)) 
+
+    // Converting the HTML Collection into array to get several benefits 
+    const array_conversion = Array.from(lst);
+    console.log(array_conversion);
+    // Node List Collection 
+    const node = document.querySelectorAll('#items');  // will return all the node list 
+    console.log(node.length)
+    const class_attributes = document.querySelector('#items');
+    console.log(class_attributes.getAttribute('id')); // it will return the if of an element 
+    class_attributes.innerHTML = 'kesa laga mera mazak';
+    class_attributes.innerText;
+   </script>
 </body>
 </html>

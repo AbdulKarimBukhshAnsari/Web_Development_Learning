@@ -11,6 +11,7 @@ function save_bag_items(){
 
 show_content();
 function add_items(itemID){
+    alert("Adding the items in your Bag!")
     bag_items.push(itemID);
     console.log(bag_items);
     localStorage.setItem('bag-count',JSON.stringify(bag_items));
