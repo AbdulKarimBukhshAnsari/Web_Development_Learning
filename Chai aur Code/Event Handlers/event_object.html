@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- This is the dafualt behaviour of the this a tag to remove this behaviour we use the prevent default -->
+    <a href="https://www.facebook.com/kareem.ansari.3939">Facebook</a>
+    <script>
+        let a = document.querySelector('a');
+        a.addEventListener('click' , function(e){
+            // It will remove the default behviour of the anchor tag
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>

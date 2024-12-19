@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- We use Add Event listener function to addd an event at the certain action 
+ It take three parameters 
+ 1)The type of the event 
+ 2)The function which you want to invoke 
+ 3)The type of Propagation of the Events (default is False which means it will be used Bubbling ) 
+ Bubbling means the event will propafgate from child to parent 
+ The Capturing will contain the true it means that it will propagate from parent to child 
+ -The Function will take as an argument the element object which has so many functions
+ -->
+<body style="height : 100vh; display: flex; justify-content: center; align-items: center;">
+    <button style="width:10%; height: 7%; background-color: black; color:white ; font-size: large; font-weight:900 ; cursor: pointer; "  >
+        Black
+    </button>
+    <script>
+    let button_element = document.querySelector('button');
+
+    button_element.addEventListener('click',function(e){
+        if(e.target.style.backgroundColor === "black"){
+            e.target.style.backgroundColor = 'white';
+            e.target.innerHTML = 'White';
+            e.target.style.color = 'black';
+            e.target.parentNode.style.backgroundColor = 'black';
+        }
+        else{
+            e.target.style.backgroundColor = 'black';
+            e.target.innerHTML = 'Black';
+            e.target.style.color = 'white';
+            e.target.parentNode.style.backgroundColor = 'white';
+        }
+        
+    })
+
+    </script>
+</body>
+</html>

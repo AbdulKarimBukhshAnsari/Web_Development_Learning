@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 500px; height: 300px; background-color: white;" id="div"> </div>
+    <button style="width:100px ; height:70px; display: inline-block;" id="button"></button>
+    <button style="width:100px ; height:70px; display: inline-block; margin-left: 1rem ;" id="button1" >Remove Event</button>
+    <script>
+    let button = document.getElementById('button');
+    let div =  document.getElementById('div');
+    let button1 =  document.getElementById('button1');
+    button.innerHTML = 'White';
+    const colors = [
+    "red", "blue", "green", "yellow", "orange", 
+    "purple", "pink", "brown", "gray", "black", 
+    "white", "cyan", "magenta", "lime", "teal", 
+    "navy", "maroon", "olive", "gold", "silver"
+    ];
+    function random_number(){
+        return Math.floor(Math.random() * 19);
+    }
+    function color_change(){
+        let color = random_number();
+        div.style.backgroundColor = colors[color];
+        button.innerHTML = colors[color];        
+    }
+    button.addEventListener('click' , color_change);
+    button1.addEventListener('click' , function(){
+        button.removeEventListener('click',color_change)
+    })
+
+    </script>
+</body>
+
+</html>
