@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: blanchedalmond;
+            height: 200px;
+            width: 400px;
+        }
+        .first_child{
+            background-color: aqua;
+            height: 80%;
+            width: 80%;
+        }
+        .nestedchild{
+            background-color: cadetblue;
+            height: 80%;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent ">
+        Parent
+        <div class="first_child">
+            1st child
+            <div class="nestedchild">2nd nestedchild</div>
+        </div>
+    </div>
+    <script>
+        let parent = document.querySelector('.parent');
+        let child = document.querySelector('.first_child');
+        let nested_child = document.querySelector('.nestedchild');
+        // this is the example of bubbling 
+        // parent.addEventListener('click',function(){
+        //     alert('Parent has been clicked')
+        // })
+        // child.addEventListener('click',function(){
+        //     alert('Child has been clicked')
+        // })
+        // nested_child.addEventListener('click',function(){
+        //     alert('Nested been clicked')
+        // })
+
+        // this is an example of Capturing 
+        parent.addEventListener('click',function(){
+            alert('Parent has been clicked')
+        })
+        child.addEventListener('click',function(){
+            alert('Child has been clicked')
+        })
+        nested_child.addEventListener('click',function(){
+            alert('Nested been clicked')
+        },true )
+    </script>
+</body>
+</html>
