@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MorphoAI</title>
     <link rel="stylesheet" href="CSS/output.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=image" />
 </head>
 <body class="bg-[#111827] text-white"> 
     <!-- Section For imamge and heading -->
-    <div class="upper-image bg-[url('17263.jpg')] h-[40vh] w-full bg-cover bg-center bg-no-repeat px-36">
-        <h1 class="main-heading text-center  z-10 pt-20 font-mono text-5xl font-bold" >AI Image Generator</h1>
-        <h2 class="sub-heading text-center  pt-8 text-xl font-bold ">Experience the future of creativity with our AI-powered image generator - transforming your ideas into breathtaking, high-quality visuals effortlessly.</h2>
+    <div class="upper-image bg-[url('17263.jpg')] h-[40vh] w-full bg-cover bg-center bg-no-repeat px-20 md:px-36">
+        <h1 class="main-heading text-center  z-10 pt-20 font-mono lg:text-5xl md:text-3xl text-2xl font-bold" >MorphoAI</h1>
+        <h2 class="sub-heading text-center  pt-8 md:text-xl text-lg font-bold ">Experience the future of creativity with our AI-powered image generator - transforming your ideas into breathtaking, high-quality visuals effortlessly.</h2>
     </div>
     <!-- Section for prompt and for the picture   -->
-    <div class="content-section flex justify-evenly">
-        <div class="image w-[45vw] bg-[#1f2937] h-[80vh] m-6 rounded-xl p-5 ">
+    <div class="content-section  lg:flex block justify-evenly">
+        <div class="image w-[100vw] bg-[#1f2937] md:h-[80vh]  h-[50vh] m-6 rounded-xl p-5 ">
             <div class="picture-div w-full h-full bg-[#374151] flex justify-center items-center">
-                <span class="material-symbols-outlined text-6xl " style="font-size: 56px;">
+                <span class="icon material-symbols-outlined text-6xl " style=" font-size: 56px; ">
                     image
                 </span>
-                <img src="" alt="" class="w-full h-full hidden">
+                <img src="" alt="" class="w-full h-full z-10 hidden">
             </div>
+            <a href="" download="generated-image.png" class="download-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hidden mt-6 text-center ">Download</a>
         </div>
-        <div class="prompt-guidelines w-[45vw] bg-[#1f2937] h-[80vh] m-6 p-7 rounded-xl ">
+        <div class="prompt-guidelines w-[100vw] bg-[#1f2937] md:h-[80vh]  h-[50vh] m-6 p-7 rounded-xl ">
             <div class="font-bold">Enter The Prompt</div>
-            <div class="p-3"> <textarea class="prompt bg-[#374151] rounded-xl p-3" rows="5" cols="80" placeholder="Describe the image you want to generate..."></textarea></div>
+            <div class="p-3"> <textarea class="prompt bg-[#374151] rounded-xl p-3 w-full" rows="5"  placeholder="Describe the image you want to generate..."></textarea></div>
             <button class="generate-image w-full bg-[#374151] py-4 font-bold rounded-xl hover:bg-blue-700 transition-colors duration-300 ease-in-out ">Generate</button>
             <ul class="list-disc ml-6 text-sm text-gray-400 mt-6">
                 <p class="mb-2">Tips:</p>
@@ -35,5 +36,6 @@
             </ul>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
