@@ -9,5 +9,5 @@ async function hello() {
     );
     console.log("World");
   }
-  hello();
+hello();
   

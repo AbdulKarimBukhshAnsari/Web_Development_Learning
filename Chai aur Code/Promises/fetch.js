@@ -1,1 +1,1 @@
-let data = fetch('https://api.github.com/users/Asiya-Sohail').then(data=>data.json()).then(data=>console.log(data)).catch(error=>console.log(error));
+let data = fetch('').then(data=>data.json()).then(data=>console.log(data)).catch(error=>console.log(error));

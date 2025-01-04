@@ -1,6 +1,5 @@
 // first of all make the promise and resolve the promises the by returning an object , this object will be returned to then 
 let promise1 = new Promise((resolve , reject) =>{
-    reject({user:"Robot"});
     resolve({user:"Karim" , age : 20});
     
 });
