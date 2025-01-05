@@ -52,4 +52,64 @@ console.log(person_final);
 ```
 
 ## 'this' Keyword in JS 
+* Use of *this* in different context 
+
+### In an object method
+
+In an object methid this refers to the current object in which the functions is present .
+
+```javascript 
+let obj = {
+    name : 'Karim ',
+    about : function(){
+        return 'My name is ' + this.name;
+    }
+}
+
+console.log(obj.about());
+```
+### in Alone 
+*this* refers to the global object 
+
+```javascript
+let x = this;  // which will be the empty when we try to print in teh node env .
+```
+
+### In Function 
+*this* refers to the global object 
+
+```javascript 
+function hello(){
+    return this ; // it will refer the current global object if the function is not in a strict mode 
+}
+```
+## Constructor Function in JS 
+
+A **constructor function** in JavaScript is a special type of function used to create and initialize objects. When called with the `new` keyword, it generates a new object, sets up the prototype link, and binds `this` to the new object, allowing you to define properties and methods for the instance. Constructor functions are named with a capital letter by convention (e.g., `Person` or `Car`) to indicate they are intended for object creation.
+
+
+```javascript
+
+// The constructor function is used to create a new instance of the object 
+
+
+function User_Data(name , grade , cgpa){
+    this.name = name;
+    this.grade = grade ;
+    this.cgpa = cgpa ;
+    return this ; // this line is optional , automatically this will be returned 
+}
+
+
+// if we will make the function withot using the "new" keyword it will overwrite the values because the function in non strict mode refers to the global 
+// this which is obv same for both , so avoid this confusion we will make the separate instances by using new
+user_one = new User_Data('karim' , '10' ,3.86);
+user_two = new User_Data('hilal', '12', 3.80);
+console.log(user_one);
+console.log(user_two)
+
+```
+
+
+
 
