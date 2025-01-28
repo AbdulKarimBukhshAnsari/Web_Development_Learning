@@ -4,7 +4,7 @@ import React, { createContext } from "react";
 // in which we basically made the context in which the share data will be send or fetch 
 
  // making a context 
-const userContext = createContext()
+const UserContext = createContext()
 
 
-export default userContext;
+export default UserContext;

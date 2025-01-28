@@ -1,6 +1,6 @@
 // this is the third step in which we basically made 
 import { useContext, useState } from "react";
-import userContext from "../context/userContext";
+import UserContext from "../context/userContext";
 
 export default function Login(){
 
@@ -8,11 +8,11 @@ export default function Login(){
     const [username , setUsername] = useState('');
     const [password , setPassword]  = useState('');
     // for getting excess for the gloibL STATE
-    const {setUser} = useContext(userContext);
+    const {setUser} = useContext(UserContext);
     console.log(setUser);
     const handle_submit = (e)=>{
         e.preventDefault()
-        setUser({username , password})
+        setUser([username , password])
     }
 
     return (
