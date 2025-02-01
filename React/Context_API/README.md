@@ -1,8 +1,5 @@
 # Step by Step method to Consume and create the Context 
 
-Absolutely! Let’s do a **dry run** of the entire flow with clear explanations. We'll go step by step:
-
----
 
 ## 1. **Creating the Context**
 We start by creating the context. This is essentially creating a "store" where we can share data across components.

@@ -20,9 +20,6 @@ function Button_Formation(){
   )
 }
 
-
-
-
 createRoot(document.getElementById('root')).render(
   <Button_Formation/>
 )

@@ -13,8 +13,9 @@ function First_question(){
 
 // To check the event handling in JSX
 function Button_clicked(){
+  // instead of calling the function in the o click just give the reference otherwise it will call the function which is not our target our target to invoke the function when the button wil be clicked 
   return <>
-  <button id='login' onClick={handle_click}>
+  <button id='login' onClick={handle_click}>  
     Log in 
   </button>
   </>
