@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { createContext } from "react";
 
 
@@ -18,4 +19,4 @@ export const TodoContext = createContext({
 
 export const ContextProvider = TodoContext.Provider;
 
-export const useTodo = 
+export const useTodo = () => useContext(TodoContext) ;
