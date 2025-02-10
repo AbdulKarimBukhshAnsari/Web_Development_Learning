@@ -30,5 +30,13 @@ export const todoSlice = createSlice({
     }
 })
 
+// this will be exported into componenets to access them 
+
+export const {addTodo , removeTodo} = todoSlice.actions;
+
+
+// this will be eported in the store 
+export default todoSlice.reducer;
+
 
 
