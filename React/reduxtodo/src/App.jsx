@@ -14,6 +14,10 @@ function App() {
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
+
+
+
+      
     }}>
       <h1 className="main-heading text-white w-[20%] mx-auto text-4xl mb-6">Todo Application </h1>
       <Form/>
