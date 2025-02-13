@@ -40,11 +40,9 @@ double(10);
 // Use bind() to create a function greetJohn() that sets the name to "John" and then chain another bind() to set the age to 30.
 console.log('3rd Question')
 console.log('-------------------------------------------')
-
 function greet(name , age){
     console.log(`Hello, my name is ${name} and I am ${age} years old.`)
 }
-
-let greet_john1 = greet.bind(null , 'John');
-let greet_john = greet_john1.bind(null , 14);
+let greet_john1 = greet.bind(null , 'John'); // this is the 1st chain 
+let greet_john = greet_john1.bind(null , 14); // this is the 2nd chain 
 greet_john();

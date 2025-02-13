@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: black;
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  background: red;
+  border-color: white;
+  border-width: 3px;
+}
+
