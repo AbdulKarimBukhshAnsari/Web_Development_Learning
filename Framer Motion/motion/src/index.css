@@ -13,5 +13,6 @@ body{
   background: red;
   border-color: white;
   border-width: 3px;
+  border-style: solid;
 }
 

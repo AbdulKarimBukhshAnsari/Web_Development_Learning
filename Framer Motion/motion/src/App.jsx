@@ -7,11 +7,34 @@ function App() {
 
   return (
     <>
-      <motion.div className="box" animate = {{x:1000 , rotate:360 , y:500}} transition={{duration:3 , delay:2}}>
-        
+      <motion.div className="box" animate = {{x:[0,1000,0] , rotate:360 , y:[0,300,0]}} transition={{duration:3 , delay:2 , ease:'anticipate', repeat:Infinity
+      }}>  
       </motion.div>
+      <motion.div
+       className="box"
+        animate={{
+          x:[0,800,800,0, 0], 
+          y:[0,0,300,300,0],
+          rotate:[90,180,270,360]
+        }}
+        transition={{
+          duration:4,
+          delay: 1,
+          repeat:Infinity,
+        }}
+
+        ></motion.div>
+
+       <motion.div
+        drag
+        className="box"
+        whileDrag={{
+          scale:0.8
+        }}></motion.div>
     </>
   )
 }
 
 export default App
+
+
